@@ -65,7 +65,7 @@ function Home() {
     const formData = new FormData();
     formData.append("file", file);
 
-    const res = await fetch("http://127.0.0.1:5000/predict-disease", {
+    const res = await fetch("https://smart-farming-backend-x4rc.onrender.com", {
       method: "POST",
       body: formData
     });

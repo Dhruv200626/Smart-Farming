@@ -70,7 +70,7 @@ function Crop() {
   // 🌾 PREDICT
   const handleSubmit = async () => {
     try {
-      const res = await fetch("http://127.0.0.1:5000/predict", {
+      const res = await fetch("https://smart-farming-backend-x4rc.onrender.com", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(
